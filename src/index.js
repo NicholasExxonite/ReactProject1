@@ -1,8 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+import Navigation from './Navigation';
+import header from './header';
 import * as serviceWorker from './serviceWorker';
+
+class App extends React.Component{
+  render(){
+    return(
+      <div>
+        <Navigation titleLogo="React Project!"/>
+        <header />
+      </div>
+    );
+  }
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
