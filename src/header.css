@@ -1,0 +1,22 @@
+header{
+  text-align: center;
+  margin: 0 auto;
+}
+header h1{
+  margin: 0;
+  padding: 80px;
+  color: #D7E1A6;
+  font-size: 2rem;
+}
+
+header a{
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+  font-weight: 700;
+  background-color: #D7E1A6;
+  border-color: #1d809f;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  display: inline-block;
+}

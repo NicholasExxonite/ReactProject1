@@ -1,15 +1,18 @@
 import React from 'react';
-import image from url("http://bighdwalls.com/wp-content/uploads/mountain-river-quote-background.jpg");
-var myStyles = {
-  backgroundImage: 'url(' + {image} +')',
-  height:'300px',
+import Image from './img/headerImg.jpg';
+
+import './header.css';
+const headerStyle = {
+  backgroundImage: `url( ${Image} )`,
+  height:'80vh',
   backgroundSize: 'cover'
-}
+};
 class Header extends React.Component{
   render(){
-    // const image = 'http://bighdwalls.com/wp-content/uploads/mountain-river-quote-background.jpg';
     return(
-      <header style={myStyles}>
+      <header style={headerStyle}>
+        <h1>{this.props.title}</h1>
+        <a href="#">{this.props.button}</a>
       </header>
     );
   }

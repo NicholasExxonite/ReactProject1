@@ -3,15 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import Navigation from './Navigation';
-import header from './header';
+import Header from './header';
+import Services from './services';
 import * as serviceWorker from './serviceWorker';
+
 
 class App extends React.Component{
   render(){
     return(
       <div>
         <Navigation titleLogo="React Project!"/>
-        <header />
+        <Header title="A Stylish Portfolio Project" button="More Info" />
+        <Services />
       </div>
     );
   }

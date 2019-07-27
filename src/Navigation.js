@@ -1,15 +1,14 @@
-import React, {component} from 'react';
+import React from 'react';
 import './Navigation.css';
 // import './App.css';
-
+const sections = ['Home', 'About', 'Services', 'Contact'];
+const navigationLinks = sections.map((item) => {
+  return (
+    <li><a href={'#' + item}>{item}</a></li>
+  )
+});
 class Navigation extends React.Component{
   render(){
-    const sections = ['Home', 'About', 'Services', 'Contact'];
-    const navigationLinks = sections.map((item) => {
-      return (
-        <li><a href={'#' + item}>{item}</a></li>
-      )
-    });
 
     return(
       <nav>
